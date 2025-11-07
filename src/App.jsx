@@ -289,7 +289,7 @@ I’m constantly exploring new tools and technologies to bring motion, 3D, and c
                   <motion.div
   key={skill}
   whileHover={{ rotateY: 360 }}
-  whileTap={{ scale: 1.1, rotateY: 180 }} // 🟣 للموبايل (لمسة)
+  whileTap={{ scale: 1.1, rotateY: 360 }} // 🟣 للموبايل (لمسة)
   initial={{ opacity: 0, scale: 0.8 }}
   whileInView={{ opacity: 1, scale: 1 }}
   viewport={{ once: true }}
@@ -349,7 +349,8 @@ I’m constantly exploring new tools and technologies to bring motion, 3D, and c
                     const message = data.get("message");
                     const subject = encodeURIComponent(`Portfolio message from ${name}`);
                     const body = encodeURIComponent(`Name: ${name}%0AEmail: ${email}%0A%0A${message}`);
-                    window.location.href = `mailto:youremail@example.com?subject=${subject}&body=${body}`;
+                    window.location.href = `mailto:erenywagih70@gmail.com?subject=${subject}&body=${body}`;
+
                   }}
                 >
                   <label className="block text-xs text-slate-600">Name</label>
