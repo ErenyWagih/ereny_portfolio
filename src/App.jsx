@@ -348,7 +348,7 @@ I’m constantly exploring new tools and technologies to bring motion, 3D, and c
                     const email = data.get("email");
                     const message = data.get("message");
                     const subject = encodeURIComponent(`Portfolio message from ${name}`);
-                    const body = encodeURIComponent(`Name: ${name}%0AEmail: ${email}%0A%0A${message}`);
+                    const body = `${name}\n\n${message}`;
                     window.location.href = `mailto:erenywagih70@gmail.com?subject=${subject}&body=${body}`;
 
                   }}
